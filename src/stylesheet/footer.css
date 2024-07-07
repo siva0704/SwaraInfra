@@ -11,7 +11,8 @@ padding-right: 70px;
 }
 .footer2{
   margin-left: -50px;
-  margin-right: -50px;
+  margin-right: -50px; 
+  
 }
 
 .footer-section {
@@ -47,6 +48,7 @@ padding-right: 70px;
   color: #fff;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -60,9 +62,9 @@ padding-right: 70px;
       margin: 10px 0;
   }
   .footer2{
-   margin-right: -10px;
+   margin-right: -50px;
    margin-left: -10px;
-  }  
+  } 
 }
 
 .footer2{

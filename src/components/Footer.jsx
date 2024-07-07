@@ -1,5 +1,6 @@
 // Footer.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../stylesheet/footer.css';
 // import '../stylesheet/header.css';
 import WhatsappIcon from '../assets/whatsappicon.png';
@@ -30,11 +31,11 @@ function Footer () {
           <div className="footer-section">
             <h3>Menu</h3>
             <ul>
-              <li>About Us</li>
-              <li>Why Choose Us for Your Dream Home</li>
-              <li>Ongoing Projects</li>
-              <li>Careers</li>
-              <li>Contact Us</li>
+              <li><Link style={{color:'white'}} to="/aboutus" >ABOUT US</Link></li>
+            
+              <li><Link style={{color:'white'}} to="*">CONSTRUCTION</Link></li>
+           
+              <li><Link style={{color:'white'}} to="/contact" >CONTACT US</Link></li>
             </ul>
           </div>
           <div className="footer-section">
@@ -45,14 +46,6 @@ function Footer () {
               <li>Get Estimate for Customised Requirement</li>
               <li>Frequently Asked Questions</li>
             </ul>
-          </div>
-          <div className="footer-section">
-            <h3>Sign Up</h3>
-            <p>For our newsletter to receive updates</p>
-            <form>
-            <input type="email" placeholder="Enter your email" id="email" required pattern="^[^\&@]+@[^\&@]+\.[^\&@]+$" />
-              <button type="submit">Sign Up</button>
-            </form>
           </div>
         </footer>
         <footer className="footer2">

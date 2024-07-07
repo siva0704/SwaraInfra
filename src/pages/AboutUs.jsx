@@ -14,7 +14,7 @@ import ourvision from '../assets/aboutus/ourvision-icon.png';
 import features from '../assets/aboutus/features-icon.png';
 function AboutUs() {
   return (
-    <div>
+    <div className="boddy"> 
     <section id="home-banner">
         <img src={aboutusimg} alt="homeimage"/>
         <h1>Welcome to <span>SWARA INFRA</span></h1>
@@ -25,10 +25,7 @@ function AboutUs() {
                 <h2>About <span>Us</span></h2>
                 <p id="first">(BUILDING AS PER <span>YOUR CONVENIENCE</span>...)</p>
                 <p id="next">
-                    BuildAhome is a one-stop solution for all your home construction needs, providing the most
-                    comprehensive, turnkey, end-to-end services and solutions for all your home building requirements
-                    and desires. If you own land, choose us to convert your dream home construction into reality by
-                    involving yourselves with our civil experts.
+                Swarainfra turns that dream into reality. We're your one-stop shop for everything home construction. From expert civil engineers to a team that oversees every detail, we handle it all. Consider us your partner, guiding you through the process and ensuring your vision comes to life.
                 </p>
             </div>
             <img src={abus} alt="home construction image" />
@@ -90,8 +87,6 @@ function AboutUs() {
                 <li>New & Trending Designs</li>
                 <li>No Subcontracts</li>
                 <li>No Hidden Charges</li>
-                <li>Tech Enabled buildAhome Application</li>
-                <li>1 Year Construction Guarantee & 10 Year Waterproofing Warranty</li>
                 <li>Timely Delivery</li>
                 <li>Fair Pricing</li>
                 <li>High quality work with No Compromise</li>
