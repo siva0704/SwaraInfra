@@ -41,8 +41,8 @@ function Header() {
                     <img src={logo} alt="logo" className="logo" />
                 </Link>
                 <ul className="nav-contents">
-                    <li><Link to="*" className={`nav-construction ${getLinkClass('*')}`}>CONSTRUCTION</Link></li>
-                    <li><Link to="/home" className={`home ${getLinkClass('/home')}`}>HOME</Link></li>
+                    <li><Link to="SwaraInfra" className={`nav-construction ${getLinkClass('SwaraInfra')}`}>CONSTRUCTION</Link></li>
+                    <li><Link to="*" className={`home ${getLinkClass('*')}`}>HOME</Link></li>
                     <li><Link to="/aboutus" className={`about ${getLinkClass('/aboutus')}`}>ABOUT US</Link></li>
                     <li><Link to="/packages" className={`package ${getLinkClass('/packages')}`}>PACKAGES</Link></li>
                     <li><Link to="/contact" className={`contact ${getLinkClass('/contact')}`}>CONTACT US</Link></li>

@@ -12,6 +12,8 @@ import construction from '../assets/aboutus/construction-icon.png';
 import handover from '../assets/aboutus/handover-icon.png';
 import ourvision from '../assets/aboutus/ourvision-icon.png';
 import features from '../assets/aboutus/features-icon.png';
+import { Link } from 'react-router-dom';
+
 function AboutUs() {
   return (
     <div className="boddy"> 
@@ -22,8 +24,8 @@ function AboutUs() {
     <main>
         <section id="about">
             <div className="text-containers">
-                <h2>About <span>Us</span></h2>
-                <p id="first">(BUILDING AS PER <span>YOUR CONVENIENCE</span>...)</p>
+                <h2>About <span className='us'>Us</span></h2>
+                <p id="first">(<span>To discover the perfect plan for your needs, visit our detailed  <Link to="/packages"> package page...</Link></span>)</p>
                 <p id="next">
                 Swarainfra turns that dream into reality. We're your one-stop shop for everything home construction. From expert civil engineers to a team that oversees every detail, we handle it all. Consider us your partner, guiding you through the process and ensuring your vision comes to life.
                 </p>
@@ -113,6 +115,8 @@ function AboutUs() {
                 <div><img src={kamdenu} alt="Image 3" /></div>
                 <div><img src={fixit} alt="Image 4" /></div>
             </div>
+
+
         </div>
     </section>
 </div>

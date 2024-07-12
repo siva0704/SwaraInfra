@@ -13,7 +13,7 @@
 .container {
   max-width: 100%;
   align-content: center;
-  margin-top: 40%;
+  margin-top: 0%;
   margin-left: 10%;
 margin-right: 5%;
 }
@@ -89,8 +89,22 @@ h1 span {
   color: blue;
 }
 
+.homes{
+
+  font-size: larger;
+}
+.akshy{
+    color: blue;
+    font-size:medium;
+  font-style: italic;
+}
+
 /* Media query for tablets and larger */
 @media screen and (max-width: 768px) {
+.container{
+  margin-top: 10%;
+}
+
   .body{
     margin-left:-20px;}
   .contentHome { padding-right: 40px;

@@ -33,7 +33,7 @@ function Footer () {
             <ul>
               <li><Link style={{color:'white'}} to="/aboutus" >ABOUT US</Link></li>
             
-              <li><Link style={{color:'white'}} to="*">CONSTRUCTION</Link></li>
+              <li><Link style={{color:'white'}} to="SwaraInfra">CONSTRUCTION</Link></li>
            
               <li><Link style={{color:'white'}} to="/contact" >CONTACT US</Link></li>
             </ul>

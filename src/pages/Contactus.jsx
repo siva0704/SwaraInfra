@@ -1,13 +1,14 @@
 import React from 'react';
 import '../stylesheet/contactus/contactus.css'; // Import CSS file
+import { Link } from 'react-router-dom';
 
 function Contactus() {
   return (
     <main>
       <section className="intro">
         <h4>TALK TO US AND</h4>
-        <h2>WE CAN <span>BUILD YOUR DREAM HOME</span> AROUND YOU</h2>
-        <h4>Home .... Contact-Us below</h4>
+        <h2>WE CAN <span style={{fontSize:25}}>BUILD YOUR DREAM HOME</span> AROUND YOU</h2>
+        <h4> <span>(To discover the perfect plan for your needs, visit our detailed  <Link to="/packages"> package page...</Link>)</span></h4>
       </section>
 
       <section className="intro1">

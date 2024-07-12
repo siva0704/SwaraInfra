@@ -4,14 +4,15 @@ import safetyImage from '../assets/home/safty.jpg';
 import homeImage from '../assets/home/home2.png';
 import personalizedImage from '../assets/home/personalized.jpeg.jpg';
 import '../stylesheet/home/mainhome.css'; // Import CSS file
-
+import { Link } from 'react-router-dom';
 
 class MainHome extends React.Component {
     render() {
         return (
             <body className='body'>
             <section className="container">
-                <h1 id="home">Our <span style={{ color: 'blue' }}>Homes</span></h1>
+                <h1 id="home">Our <span className='homes' style={{ color: 'blue' }}>Homes</span></h1>
+                <h2 className='akshy'>(To discover the perfect plan for your needs, visit our detailed  <Link to="/packages"> package page...</Link>)</h2>
 
                 <div className="contentHome">
                     <div className="text-container">

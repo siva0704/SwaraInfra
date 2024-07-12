@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../stylesheet/construction/construction.css';
+import { Link } from 'react-router-dom';
 
 function SwaraInfra() {
   const [activeTab, setActiveTab] = useState('completed');
@@ -47,8 +48,9 @@ function SwaraInfra() {
 
   return (
     <div className="container1">
-      <h2>VIEW <span>CONSTRUCTION</span></h2>
-      <h3>Delivering the high quality construction services...</h3>
+      <h2>VIEW CONSTRUCTION </h2>
+      <h3 className='akshy'>(To discover the perfect plan for your needs, visit our detailed <Link to="/packages"> package page...</Link>)</h3>
+      <h2>Delivering the high quality construction services... </h2>
 
       <div className="projects-section">
         <h2>Our Projects</h2>
