@@ -1,339 +1,99 @@
-.main {
+/* Contactus styles */
+.contactus-main {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.intro {
-    margin: 150px 0 0% 30px;
-}
-
-.intro1 {
-    margin-top: 10px;
-    margin-bottom: 10%;
-}
-
-.intro h4, .intro1 h4 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.intro h2, .intro1 h2 {
-    font-size: 36px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.intro1 h2 {
-    margin-left: 60px;
-    margin-top: 60px;
-    font-size: 30px;
-}
-
-.intro1 ul {
-    list-style-type: disc;
-    margin-left: 40px;
-    padding-left: 0;
-}
-
-span {
-    color: blue;
-}
-
-.intro1 ul li {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #333;
-    line-height: 1.5;
-}
-.signupHeader{
-    margin-left: 400px;
-}
-
-.signup {
-    margin-left: 500px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 500px;
-}
-
-.signup form {
-    margin-bottom: 20px;
-    background-color: #ebe0e8;
+    margin: 0;
+  }
+  
+  .contactus-intro, .contactus-intro1, .contactus-contact, .contactus-head2, .contactus-location-images {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 15px;
-}
-
-.signup input, .signup select, .signup textarea {
-    width: 95%;
     margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.signup button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.signup button:hover {
-    background-color: #ffcc00;
-}
-
-.signupHeader {
-    position: relative;
-    height: 60px;
-}
-
-.signupHeader h4 {
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    margin: 0;
-    padding-left: 170px;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.contact h4 {
-    font-size: 50px;
-    color: #2e3384;
+  }
+  
+  .contactus-intro h4, .contactus-intro1 h2, .contactus-contact h4, .contactus-head2 h2 {
+    text-align: center;
     margin-bottom: 10px;
+  }
+  
+  .contactus-intro h2 {
     text-align: center;
-    font-weight: 700;
-}
-
-.contact-methods {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .contactus-intro1 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contactus-intro1 li {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .contactus-contact-methods {
     display: flex;
-    justify-content: center;
-}
-
-.contact-methods > div {
-    text-align: center;
-    margin: 0 20px;
-    padding: 20px;
-    border: 2px solid blue;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contact-methods > div:hover {
-    background-color: #e8b602;
-    color: white;
-}
-
-#first {
-    margin-bottom: 5px;
-    color: blue;
-    font-size: 24px;
-}
-
-#next {
-    color: black;
-    font-size: 20px;
-}
-
-.head2 {
-    margin-top: -100px;
-    font-size: large;
-    font-weight: 700;
-    margin-bottom: 1px;
-    padding-left: 30px;
-}
-
-#location-images {
-    margin: -20% 0 -30%;
-    padding: 20%;
-    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.map-container {
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    flex: 1 0 300px;
+  }
+  
+  .contactus-email, .contactus-call-us {
+    flex: 1;
+    min-width: 300px;
     text-align: center;
-    padding: 1%;
-}
-.map-container iframe{
-    width:700px;
-    height: 300px;
-}
-
-
-/* Media Queries */
-@media (max-width: 1200px) {
-    .intro h2, .intro1 h2 {
-        font-size: 32px;
+  }
+  
+  .contactus-first {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .contactus-next {
+    margin-top: 5px;
+  }
+  
+  .contactus-map-container {
+    text-align: center;
+  }
+  
+  .contactus-map-container iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .contactus-intro h2 {
+      font-size: 1.5em;
     }
-
-    .signupHeader h4 {
-        padding-left: 100px;
-        font-size: 35px;
+  
+    .contactus-intro1 li, .contactus-contact-methods .contactus-first {
+      font-size: 1em;
     }
-    .map-container iframe{
-        width:700px;
-        height: 300px;
+  }
+  
+  @media (max-width: 480px) {
+    .contactus-intro h2 {
+      font-size: 1.2em;
     }
-}
-
-@media (max-width: 992px) {
-    .intro, .intro1 {
-        margin-left: 10px;
-        margin-right: 10px;
+  
+    .contactus-intro1 li, .contactus-contact-methods .contactus-first {
+      font-size: 0.9em;
     }
-
-    .signup form {
-        max-width: 55%;
-        height: 400px;
+  
+    .contactus-contact-methods {
+      flex-direction: column;
     }
-
-    .signup input, .signup select, .signup textarea {
-        width: 95%;
+  
+    .contactus-email, .contactus-call-us {
+      margin-bottom: 20px;
     }
-
-    .signup button {
-        width: 100%;
-    }
-
-    .contact h4 {
-        font-size: 40px;
-        margin-top: 90px;
-    }
-
-    .contact-methods {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .intro{
-        padding-left: 15px;
-    }
-
-    .signupHeader h4 {
-        padding-left: 50px;
-        font-size: 20px;
-    }
-    .signupHeader{
-        margin-top: 100px;
-        margin-left: 10px;
-        margin-bottom: -20px;
-    }
-    .signup{
-        margin-left: 10px;
-    }
-    .contact h4 {
-        font-size: 35px;
-    }
-    .contact{
-        margin-left: 30px;
-        margin-right: 80px;
-    }
-    .contact .call-us{
-        padding-left: 20px;
-        margin-top: 30px;
-    }
-    .map-container{
-        margin-top: 50px;
-        margin-left: 180px;
-        margin-bottom: -150px;
-    }
-    .map-container iframe{
-        width:300px;
-        height: 150px;
-    }
-    
-    .intro1 ul li{
-        font-size: 20px;
-        margin-left: 10px;
-    }
-    .email p{
-        padding-bottom: -20px;
-    }
-    .contact{
-        margin-top: -30px;
-    }
-}
-
-@media (max-width: 576px) {
-    .intro h4, .intro1 h4 {
-        font-size: 18px;
-    }
-    .intro{
-        margin-top: 150px;
-    }
-   .intro1{
-    margin-top: 40px;
-    margin-left: -10px;
-   }
-   .intro1 ul li{
-    font-size: 18px;
-   }
-    .intro h2, .intro1 h2 {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .contact h4 {
-        font-size: 30px;
-    }
-
-
-    .signupHeader h4 {
-        padding-left: 20px;
-        font-size: 25px;
-    }
-.signup{
-    margin-left: 30px;
-}
-    .signup form {
-        padding: 50px;
-    }
-
-    .signup input, .signup select, .signup textarea {
-        padding: 8px;
-    }
-
-    .signup button {
-        margin-top: -10px;
-        padding: 4px 16px;
-    }
-
-    .head2 {
-        margin-top: -140px;
-        padding-left: 60px;
-    }
-
-    #location-images {
-        width: 10%;
-       margin-left: 50px;
-       margin-right: 20px;
-        padding: 5%;
-    }
-    .contact-methods {
-        flex-direction: column;
-        align-items: center;
-    }
-    .email p{
-        line-height: 0.1rem;
-    }
-    .call-us p{
-     line-height:0.1px;
-     padding-left: 10px;
-     padding-right: 20px;
-    }
-   
-}
+  }
+  

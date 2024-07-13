@@ -12,6 +12,8 @@ function toggleNested(event, nestedId) {
   nestedContent.classList.toggle('active'); // Toggle the 'active' class
 }
 
+
+
 function Package() {
   function scrollToClick() {
     const clickElement = document.querySelector('.totalClick_sec');
@@ -25,15 +27,15 @@ function Package() {
           <h1>BUILDING <span> PACKAGES</span></h1>
         </div>
       </section>
-      <section className="section2">
-        <div className="sec2_div1">
-          <p>
+
+        <div>
+          <center><p style={{fontSize:'large', fontWeight:'bold'}}>
             Get clear ideas of what raw materials to be used to build your home.
             <br />
-            <span>(*The below Prices are applicable to  Hubballi and Dharwad location Only.)</span>
-          </p>
+            <span style={{fontWeight:'bold',fontStyle:'italic', color:'blue'}}>(*The below Prices are applicable to  Hubballi and Dharwad location Only.)</span>
+          </p></center>
         </div>
-      </section>
+    
       <section className="contentpackage">
         <div className="section-boxes">
           <div className="box" onClick={() => scrollToClick()} >
@@ -115,7 +117,7 @@ function Package() {
                     <li>
                       <a href="#" onClick={(event) => toggleNested(event, 'Design4')}>Interior Design</a>
                       <ul id="Design4" className="nested">
-                      <li>Complete 3D design interiors, only if executed by swaraInfra.</li>
+                        <li>Complete 3D design interiors, only if executed by swaraInfra.</li>
                         <li>2D Furniture layout</li>
                         <li>Assisting in interior procurement</li>
                       </ul>
@@ -340,7 +342,7 @@ function Package() {
                     <li>
                       <a href="#" onClick={(event) => toggleNested(event, 'D4')}>Interior Design</a>
                       <ul id="D4" className="nested">
-                      <li>Complete 3D design interiors, only if executed by swaraInfra. </li>
+                        <li>Complete 3D design interiors, only if executed by swaraInfra. </li>
                         <li>2D Furniture layout</li>
                         <li>Assisting in interior procurement</li>
                       </ul>
@@ -369,7 +371,7 @@ function Package() {
                         <li>Permanent electrical connection</li>
                         <li>Temporary Electricity connection</li>
                         <li>Water connection</li>
-                         <li>Sewage connection</li>
+                        <li>Sewage connection</li>
                       </ul>
                     </li>
                     <li>
@@ -569,7 +571,7 @@ function Package() {
                     <li>
                       <a href="#" onClick={(event) => toggleNested(event, 'B4')}>Interior Design</a>
                       <ul id="B4" className="nested">
-                      <li>Complete 3D design interiors, only if executed by swaraInfra. </li>
+                        <li>Complete 3D design interiors, only if executed by swaraInfra. </li>
                         <li>2D Furniture layout</li>
                         <li>Assisting in interior procurement</li>
                       </ul>
@@ -600,7 +602,7 @@ function Package() {
                         <li>Permanent electrical connection</li>
                         <li>Temporary Electricity connection</li>
                         <li>Water connection</li>
-                         <li>Sewage connection</li>
+                        <li>Sewage connection</li>
                       </ul>
                     </li>
                     <li>
@@ -1041,9 +1043,9 @@ function Package() {
                       <a href="#" onClick={(event) => toggleNested(event, 'E4')}>Interior Design</a>
                       <ul id="E4" className="nested">
                         <li>Kitchen is given with Laminate on Boiling water Plywood. The basic price of laminate is
-                        ₹1650/- per sheet</li>
+                          ₹1650/- per sheet</li>
                         <li>All other interior elements are provided with laminate on neem plywood. The basic price of
-                        laminate is ₹1500/- per sheet</li>
+                          laminate is ₹1500/- per sheet</li>
                         <li>One wardrobe for every 1000 sqft of slab laid area of 7’ x 10’ including loft</li>
                         <li>Modular kitchen of upto 125 sqft with accessories worth ₹35,000</li>
                         <li>One TV unit of 35 sqft will be provided</li>
@@ -1055,9 +1057,9 @@ function Package() {
                         <li>Up to 200 sqft of wall paper is included</li>
                         <li>One vanity with mirror for every 1000 sqft of slab laid area</li>
                         <li>These specifications and measurements are included in the package. However, this doesn’t
-                        limit to executing beyond these measurements & specifications on added actual costs</li>
+                          limit to executing beyond these measurements & specifications on added actual costs</li>
                         <li>Electrical points for false ceiling are included in the package. All other points wherever needed
-                        additionally shall be charged on actuals</li>
+                          additionally shall be charged on actuals</li>
                       </ul>
                     </li>
                     <li>
@@ -1231,7 +1233,7 @@ function Package() {
                 </div>
               </form>
             </div>
-            </div>
+          </div>
           <div className="total_click">
             <div className="abovecont">
               <h4>FREEDOM+</h4>
@@ -1283,9 +1285,9 @@ function Package() {
                       <a href="#" onClick={(event) => toggleNested(event, 'F4')}>Interior Design</a>
                       <ul id="F4" className="nested">
                         <li>Kitchen is given with Laminate on Boiling water Plywood. The basic price of laminate is
-                        ₹1650/- per sheet</li>
+                          ₹1650/- per sheet</li>
                         <li>All other interior elements are provided with laminate on neem plywood. The basic price of
-                        laminate is ₹1500/- per sheet</li>
+                          laminate is ₹1500/- per sheet</li>
                         <li>One wardrobe for every 1000 sqft of slab laid area of 7’ x 10’ including loft</li>
                         <li>Modular kitchen of upto 125 sqft with accessories worth ₹35,000</li>
                         <li>One TV unit of 35 sqft will be provided</li>
@@ -1297,9 +1299,9 @@ function Package() {
                         <li>Up to 200 sqft of wall paper is included</li>
                         <li>One vanity with mirror for every 1000 sqft of slab laid area</li>
                         <li>These specifications and measurements are included in the package. However, this doesn’t
-                        limit to executing beyond these measurements & specifications on added actual costs</li>
+                          limit to executing beyond these measurements & specifications on added actual costs</li>
                         <li>Electrical points for false ceiling are included in the package. All other points wherever needed
-                        additionally shall be charged on actuals</li>
+                          additionally shall be charged on actuals</li>
                       </ul>
                     </li>
                     <li>
@@ -1455,7 +1457,7 @@ function Package() {
                         <li>Site related small costs like tarpaulin, temporary wiring within the site & etc, are included and no additional cost</li>
                         <li>Basic price of Cement is Rs.430/- per bag & Steel is Rs.80,000/- per MT. Any increase in these prices shall be charged accordingly</li>
                         <li> NOTE: The above mentioned material specifications are generalized, the inclusion or the exclusion of the same shall vary depending on the floor plan</li>
-                        
+
                       </ul>
                     </li>
                     <li>
@@ -1528,14 +1530,14 @@ function Package() {
                       <a href="#" onClick={(event) => toggleNested(event, 'G4')}>Interior Design</a>
                       <ul id="G4" className="nested">
                         <li>Kitchen is given with acrylic sheet on Boiling Water Plywood. The basic price of acrylic sheet
-                        is ₹4000/- per sheet</li>
+                          is ₹4000/- per sheet</li>
                         <li>Wardrobes are made with Century ply & 4mm thick veneer sheet finished with hand polish.</li>
                         <li>Basic price of veneer sheet is ₹2,500/ sheet</li>
                         <li>All other interior elements are given with century plywood and laminate. The basic price of
-                        laminate is ₹1550/-</li>
+                          laminate is ₹1550/-</li>
                         <li>One wardrobe for every 1000 sqft of slab laid area of dimension 7’ x 10’ including loft</li>
                         <li>One modular kitchen up to 150 sqft with ₹50,000/- worth accessories, made of BWP century
-                        ply with acrylic sheet</li>
+                          ply with acrylic sheet</li>
                         <li>TV unit of 40 sqft with storage</li>
                         <li>Shoe rack of 15 sqft with bottom and tall units</li>
                         <li>Crockery unit of dimension 3’6” x 7’ with glass shutters</li>
@@ -1550,9 +1552,9 @@ function Package() {
                         <li>Study table up to 30 sqft will be provided</li>
                         <li>One vanity in every toilet</li>
                         <li>These specifications and measurements are included in the package. However, this doesn’t
-                        limit to executing beyond these measurements & specifications on added actual costs</li>
+                          limit to executing beyond these measurements & specifications on added actual costs</li>
                         <li>Electrical points for false ceiling are included in the package. All other points wherever needed
-                        additionally shall be charged on actuals</li>
+                          additionally shall be charged on actuals</li>
                       </ul>
                     </li>
                     <li>
@@ -1736,39 +1738,39 @@ function Package() {
           </div>
         </section>
         <div className="section-actions">
-        <div className="Home_head">
-          <h2>HOW IT <span>WORKS</span></h2>
-          <p>Convenience, &amp; Transparency at your finger tips.</p>
-        </div>
-            <br/>
-        <div className="action-box">
-          <img src={packages} alt="package"/>
-          <p><span>01</span></p><br/>
-          <p>Select any package..</p>
-         </div>
+          <div className="Home_head">
+            <h2>HOW IT <span>WORKS</span></h2>
+            <p>Convenience, &amp; Transparency at your finger tips.</p>
+          </div>
+          <br />
           <div className="action-box">
-                <img src={note} alt="review"/>
-                <p><span>02</span></p>
-                <br/>
-                <p>Review & compare briefly</p>
-            </div>
-            <div className="action-box1">
-                <img src={downloadtext} alt="Download"/>
-                <p><span>03</span></p><br/>
-                <p>Dowwnload to know .</p>
-            </div>
-            <div className="action-box1">
-                <img src={requirement} alt="send"/>
-                <p><span>04</span></p><br/>
-                <p>Customize requirements</p>
-            </div>
+            <img src={packages} alt="package" />
+            <p><span>01</span></p><br />
+            <p>Select any package..</p>
+          </div>
+          <div className="action-box">
+            <img src={note} alt="review" />
+            <p><span>02</span></p>
+            <br />
+            <p>Review & compare briefly</p>
+          </div>
+          <div className="action-box1">
+            <img src={downloadtext} alt="Download" />
+            <p><span>03</span></p><br />
+            <p>Dowwnload to know .</p>
+          </div>
+          <div className="action-box1">
+            <img src={requirement} alt="send" />
+            <p><span>04</span></p><br />
+            <p>Customize requirements</p>
+          </div>
         </div>
-      
+
       </section>
     </div>
 
   );
-    }
+}
 
 
 export default Package;

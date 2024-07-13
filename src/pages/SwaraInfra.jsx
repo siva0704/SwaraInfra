@@ -6,6 +6,7 @@ function SwaraInfra() {
   const [activeTab, setActiveTab] = useState('completed');
   const [completedProjects, setCompletedProjects] = useState([]);
   const [ongoingProjects, setOngoingProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (activeTab === 'completed') {
@@ -21,8 +22,10 @@ function SwaraInfra() {
       const data = await response.json();
       const projects = data.data.map(item => item.attributes);
       setCompletedProjects(projects);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching completed projects', error);
+      setLoading(false);
     }
   };
   
@@ -32,14 +35,16 @@ function SwaraInfra() {
       const data = await response.json();
       const projects = data.data.map(item => item.attributes);
       setOngoingProjects(projects);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching ongoing projects', error);
+      setLoading(false);
     }
   };
-  
 
   const showContent = (tab) => {
     setActiveTab(tab);
+    setLoading(true);
   };
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -47,76 +52,69 @@ function SwaraInfra() {
   });
 
   return (
-    <div className="container1">
-      <h2>VIEW CONSTRUCTION </h2>
-      <h3 className='akshy'>(To discover the perfect plan for your needs, visit our detailed <Link to="/packages"> package page...</Link>)</h3>
-      <h2>Delivering the high quality construction services... </h2>
+    <div className="swara-container">
+      <center><h2 style={{fontWeight: 'bold'}}>VIEW CONSTRUCTION </h2></center>
+      <h3 style={{color:'blue',fontStyle:'italic', fontSize:'small', fontWeight: 'bold'}} className='swara-description'>(To discover the perfect plan for your needs, visit our detailed <Link to="/packages"> package page...</Link>)</h3>
+      <center><h2 style={{fontWeight: 'bold', fontSize:25}} className="mainhome-subtitle">Delivering the high quality construction services...</h2>      </center>
 
-      <div className="projects-section">
-        <h2>Our Projects</h2>
-        <div className="tabs">
+      <div className="swara-projects-section">
+        <h2><span style={{color:'blue',fontWeight: 'bold'}}>Our</span>  <span style={{color:'#FFD700', fontWeight: 'bold'}}>Projects</span></h2>
+        <div className="swara-tabs">
           <span
             id="completed"
-            className={`tab ${activeTab === 'completed' ? 'active' : ''}`}
+            className={`swara-tab ${activeTab === 'completed' ? 'swara-active' : ''}`}
             onClick={() => showContent('completed')}
           >
             Completed
           </span>
           <span
             id="ongoing"
-            className={`tab ${activeTab === 'ongoing' ? 'active' : ''}`}
+            className={`swara-tab ${activeTab === 'ongoing' ? 'swara-active' : ''}`}
             onClick={() => showContent('ongoing')}
           >
             Ongoing
           </span>
         </div>
 
-        {activeTab === 'completed' && (
-          <div id="completed-content" className="content active">
-            <section id="properties">
+        {loading ? (
+          <div className="swara-loading">
+            <div className="swara-spinner"></div>
+          </div>
+        ) : activeTab === 'completed' ? (
+          <div id="completed-content" className="swara-content swara-active">
+            <section id="swara-properties">
               {completedProjects.map((project, index) => (
-                <div className="property" key={index}>
-                  <img src={project.image_url} alt={`Property ${index + 1}`} />
-                  <div className="property1">
-                    <div className="details">
-                    
-                      <div className="containerConstruction">
-                        <div className="vertical-list">
-                          <ul className="horizontal-content">
-                            {/* <img src="Shutterstock_1411080749-removebg-preview.png" alt="" /> */}
-                            <li>Location <br />{project.location}</li>
-                            
-                          </ul>
-                        </div>
-                      </div>
+                <div className="swara-property" key={index}>
+                  <a href="#" className="swara-image-link">
+                    <img src={project.image_url} alt={`Property ${index + 1}`} className="swara-property-image" />
+                  </a>
+                  <div className="swara-property-details">
+                    <div className="swara-details-container">
+                      <ul className="swara-horizontal-content">
+                        <li>Location<br />{project.location}</li>
+                      </ul>
                     </div>
-                    <a href="#">Know More →</a>
+                    <a href="#" className="swara-know-more">Know More →</a><br/>
                   </div>
-                </div>
+                </div> 
               ))}
             </section>
           </div>
-        )}
-
-        {activeTab === 'ongoing' && (
-          <div id="ongoing-content" className="content active">
-            <section id="properties">
+        ) : (
+          <div id="ongoing-content" className="swara-content swara-active">
+            <section id="swara-properties">
               {ongoingProjects.map((project, index) => (
-                <div className="property" key={index}>
-                  <img src={project.image_url} alt={`Property ${index + 1}`} />
-                  <div className="property1">
-                    <div className="details">
-                      
-                      <div className="container">
-                        <div className="vertical-list">
-                          <ul className="horizontal-content">
-                            {/* <img src="Shutterstock_1411080749-removebg-preview.png" alt="" /> */}
-                            <li>Location <br />{project.location}</li>
-                            </ul>
-                        </div>
-                      </div>
+                <div className="swara-property" key={index}>
+                  <a href="#" className="swara-image-link">
+                    <img src={project.image_url} alt={`Property ${index + 1}`} className="swara-property-image" />
+                  </a>
+                  <div className="swara-property-details">
+                    <div className="swara-details-container">
+                      <ul className="swara-horizontal-content">
+                        <li>Location<br />{project.location}</li>
+                      </ul>
                     </div>
-                    <a href="#">Know More →</a>
+                    <a href="#" className="swara-know-more">Know More →</a>
                   </div>
                 </div>
               ))}
